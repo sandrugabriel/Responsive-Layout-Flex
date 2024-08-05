@@ -5,15 +5,30 @@
 
 body{
     margin: 0px;
-    background-color: #fafafa; 
+    background-color: #f3f1f1; 
 }
 
 img{
     display: block;
+    min-width: 100px;
+    max-width: 250px;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+a:active{
+    color: rgb(151, 151, 151);
+}
+
+a:hover{
+    color: rgb(151, 151, 151);
 }
 
 .header-container{
-    border:2px solid red; 
+  /*  border:2px solid red; */
     display: flex;
     align-items: center;
     justify-content: center;
@@ -26,30 +41,32 @@ img{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    border: 2px solid red;
+    /* border: 2px solid red; */
     width: 100%;
 }
 
 .navbar-item{
     font-size: 20px;
     background-color: #ffffff;
-    border: 2px solid red;
+    /* border: 2px solid red; */
     border-radius: 5%;
-    width: 40%;
+    width: 92%;
     min-width: 100px;
     max-width: 3150px;
     text-align: center;
-
-    
+    margin-top: 5px;
+    margin-bottom: 5px;
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
 
 .aside-container{
-    border: 2px solid red;
+    /* border: 2px solid red; */
     display: flex;
     justify-content: center;
-    align-content: center;
+    align-items: center;
     flex-direction: column;
-
+    margin: 10px;
 }
 
 .information{
@@ -59,5 +76,201 @@ img{
 
 .aside-item{
     min-width: 100px;
-    max-width: 300px;
+}
+
+.main-container{
+    background-color: #FFFFFF;
+    display: flex;      
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+.pages{
+    display: flex;      
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+
+}
+
+.page{
+    display: flex;      
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 10px;
+    margin-bottom: 50px;
+
+}
+
+.page-title{
+    text-align: center ;
+    color: rgb(60, 60, 60);
+    font-size: 20px;
+    margin: 0px;
+    margin-top: 10px;
+}
+
+.page-information{
+    text-align: center ;
+    color: rgb(96, 96, 96);
+    margin: 0px;
+    margin-top: 5px;
+}
+
+.footer-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 10px;
+}
+
+.email-phone{
+      padding: 0px;
+      margin-bottom: 0px;
+}
+
+.contact-info{
+    text-align: center;
+    color: rgb(151, 151, 151);
+}
+
+.footer-contact{
+    text-align: center;
+    color: rgb(151, 151, 151);
+}
+
+.line{
+    border: 1px solid rgb(185, 185, 185);
+    width: 100%;
+}
+
+.comeback{
+    /* border: 2px solid red; */
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+ 
+}
+
+.back-info{
+    margin:16px 5px;
+}
+
+.back-link{
+    text-decoration: none;
+    color: black;
+    display: block;
+    /* border: 2px solid red; */
+    margin-left: auto;
+}
+
+.footer-container-tablet{
+    display: none;
+}
+
+@media(min-width:640px){
+
+
+    .header-container{
+        flex-direction: column;
+        
+    }
+
+    .navbar-container{
+        flex-direction: row;
+    }
+
+    .navbar-item{
+        padding: 0px;
+        width: 100px;
+        margin: 0px;
+        background-color:  #f3f1f1;
+    }
+
+    .aside-container{
+        justify-content: space-around;
+        flex-direction: row-reverse;
+        
+    }
+
+    .information{
+        text-align: left;
+        font-size: 19px;
+    }
+
+    .pages{
+        flex-wrap: wrap;
+        flex-direction: row;
+    }
+
+    .page{
+        width: 40%;
+    }
+
+    .contact-info{
+        width: 70%;
+    }
+
+    .back-info{
+        display: none;
+    }
+
+    .footer-container-tablet{
+        display: flex;
+        justify-content: space-between;
+        align-content: center;
+        flex-direction: row;
+    }
+
+    .footer-items{
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        width: 30%;
+        margin: 16px 0px;
+    }
+
+    .footer-item{
+        padding: 0px 3% ;
+    }
+
+
+}
+
+@media(min-width: 920px){
+
+    .header-container{
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .header-title{
+        width: 40%;
+        margin-left: 20px;
+    }
+
+    .aside-container{
+        justify-content: space-between;
+    }
+
+    .information{
+        font-size: 22px;
+        margin: 0px 10px;
+        width: 60%;
+    }
+
+    .navbar-container{
+        justify-content: space-between;
+        width: 300px;
+    }
+
+    .page{
+        width: 30%;
+    }
+
 }
